@@ -1,0 +1,71 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/battleshipMap.css ***!
+  \*****************************************************************************/
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#player-board{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+}
+.player-board-square {
+    background-color: white;
+    border: black solid 1px;
+    height: 50px;
+    width: 50px;
+}
+
+#computer-board{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+}
+.computer-board-square {
+    cursor: pointer;
+    border: black solid 1px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+#board-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+#play-again-button{
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#rotate{
+    border: black solid 1px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+
+#start{
+    border: black solid 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+#win{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+}
